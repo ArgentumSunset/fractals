@@ -40,10 +40,11 @@ public class SquareFractal {
 		
 		fractal(bottomRight, n-1, nextColor);
 		fractal(topLeft,     n-1, nextColor);
-		square.draw(color);
-		
 		fractal(topRight,    n-1, nextColor);
 		fractal(bottomLeft,  n-1, nextColor);
+		
+		square.draw(color);
+		
 	}
 	
 	
