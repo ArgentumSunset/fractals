@@ -22,7 +22,14 @@ public class SierpinskiTriangle {
 	}
    
 	public void sierpinski(Point2D.Double a, Point2D.Double b, Point2D.Double c, int n) {
-	   // TODO: implement
+	   if(n <= 0) return;
+	   		Color newColor = (n % 2 == 0) ? Color.GREEN : Color.RED;
+		   top = new Point2D.Double((b.x + c.x)/4, 8);
+		   left = new Point2D.Double(b.x/2, b.y/2);
+		   right = new Point2D.Double(c.x/2, c.y/2);
+		   drawTriangle(top,left,right,newColor);
+		   sierpinski(top,left,right,n-1);
+	   
     }
    
 	public void drawTriangle(Point2D.Double a, Point2D.Double b, Point2D.Double c, Color color) {
