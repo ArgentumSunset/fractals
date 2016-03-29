@@ -33,7 +33,7 @@ public class FractalTree extends JPanel {
 	
 	public static int[] red =   {0, 0, 0, 0, 7, 15, 23, 31, 39, 47, 55, 43}; 	//Array representation 
 	public static int[] green = {171, 159, 147, 135, 123, 111, 99, 87, 75, 63, 51, 43}; //of a color scheme
-	public static int[] blue =  {0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0}; 	 
+	public static int[] blue =  {0, 12, 0, 0, 200, 151, 0, 87, 0, 0, 0, 0}; 	 
 	
 	public static double degToRad(int deg) { //degree to radian conversion
 		return deg * Math.PI / 180;

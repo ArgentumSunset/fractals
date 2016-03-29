@@ -5,7 +5,7 @@ import draw.StdDraw;
 
 
 public class SquareFractal {
-
+	
 	private double shrink = 0.5;
 	
 	public SquareFractal() {
@@ -38,16 +38,17 @@ public class SquareFractal {
 		
 		Color nextColor = new Color(red, green, blue);
 		
+		fractal(bottomRight, n-1, nextColor);
 		square.draw(color);
 		
 		fractal(topLeft,     n-1, nextColor);
 		fractal(topRight,    n-1, nextColor);
 		fractal(bottomLeft,  n-1, nextColor);
-		fractal(bottomRight, n-1, nextColor);
 	}
 	
 	
 	public static void main(String[] args) {
 		SquareFractal sqF = new SquareFractal();
+		SquareFractal sqF1 = new SquareFractal();
 	}
 }
