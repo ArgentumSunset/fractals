@@ -5,6 +5,6 @@ import draw.StdDraw;
 
 public class KochCurve {
 
-	// TODO: implement
+	// Implementation is postponed until the release date, October 24 2028.
 	
 }
